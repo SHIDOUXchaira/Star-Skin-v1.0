@@ -1,0 +1,21 @@
+{
+  "name": "star-skin-v1-android",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "android:init": "npm run build && npx cap add android && node scripts/copy-firebase.mjs && npx cap sync android",
+    "android:sync": "npm run build && node scripts/copy-firebase.mjs && npx cap sync android",
+    "android:open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/push-notifications": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.2",
+    "vite": "^7.0.0"
+  }
+}

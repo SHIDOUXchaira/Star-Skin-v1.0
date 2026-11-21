@@ -1,0 +1,14 @@
+{
+  "appId": "com.starskin.app",
+  "appName": "Star Skin v1",
+  "webDir": "dist",
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": [
+        "badge",
+        "sound",
+        "alert"
+      ]
+    }
+  }
+}

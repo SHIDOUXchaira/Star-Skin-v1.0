@@ -1,0 +1,11 @@
+import { copyFileSync, existsSync, mkdirSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+const src = resolve('firebase/google-services.json');
+const dest = resolve('android/app/google-services.json');
+if (!existsSync(src)) throw new Error('Missing firebase/google-services.json');
+if (!existsSync(resolve('android/app'))) throw new Error('Run npm run android:init first');
+const json = JSON.parse(readFileSync(src, 'utf8'));
+const pkg = json.client?.[0]?.client_info?.android_client_info?.package_name;
+if(pkg !== 'com.starskin.app') throw new Error(`Wrong Firebase package: ${pkg}`);
+copyFileSync(src,dest);
+console.log('Firebase Android config copied to android/app/google-services.json');

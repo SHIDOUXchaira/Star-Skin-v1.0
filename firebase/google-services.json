@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "245958191467",
+    "project_id": "star-skin-dc8ea",
+    "storage_bucket": "star-skin-dc8ea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245958191467:android:c216f5794962b2f7e0842e",
+        "android_client_info": {
+          "package_name": "com.starskin.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL3cUSlr1UiDbdByl3deVCPl1lQ3_lwBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
